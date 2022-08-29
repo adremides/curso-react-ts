@@ -7,9 +7,6 @@ type Props = {
 type State = {}
 
 class Welcome extends Component<Props, State> {
-  props: Props = {
-    name: "Unknown"
-  }
   state = {}
 
   // Set default props
@@ -22,10 +19,6 @@ class Welcome extends Component<Props, State> {
       <div>Hello, {this.props.name}</div>
     )
   }
-}
-
-Welcome.defaultProps = {
-  name: "Unknown"
 }
 
 export default Welcome;
